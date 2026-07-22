@@ -1,0 +1,9 @@
+{
+  "name": "nodejs-hello-tutorial",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A simple Node.js terminal greeting.",
+  "scripts": {
+    "start": "node index.js"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "stimulated-task-tracker-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A simulated REST API built with Node.js.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js"
+  }
+}
