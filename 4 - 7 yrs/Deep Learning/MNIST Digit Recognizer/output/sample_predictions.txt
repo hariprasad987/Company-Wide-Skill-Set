@@ -1,0 +1,12 @@
+Sample MNIST predictions
+========================
+Image 01: actual=7 predicted=7 [correct]
+Image 02: actual=2 predicted=2 [correct]
+Image 03: actual=1 predicted=1 [correct]
+Image 04: actual=0 predicted=0 [correct]
+Image 05: actual=4 predicted=4 [correct]
+Image 06: actual=1 predicted=1 [correct]
+Image 07: actual=4 predicted=4 [correct]
+Image 08: actual=9 predicted=9 [correct]
+Image 09: actual=5 predicted=6 [incorrect]
+Image 10: actual=9 predicted=9 [correct]

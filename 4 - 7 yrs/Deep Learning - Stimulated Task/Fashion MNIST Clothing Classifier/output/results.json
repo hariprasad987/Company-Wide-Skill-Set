@@ -1,0 +1,21 @@
+{
+  "train_images": 12000,
+  "test_images": 2000,
+  "epochs": 3,
+  "categories": [
+    "T-shirt/top",
+    "Trouser",
+    "Pullover",
+    "Dress",
+    "Coat",
+    "Sandal",
+    "Shirt",
+    "Sneaker",
+    "Bag",
+    "Ankle boot"
+  ],
+  "test_loss": 0.5411,
+  "test_accuracy_percent": 79.7,
+  "training_accuracy_percent": 78.05,
+  "validation_accuracy_percent": 78.33
+}

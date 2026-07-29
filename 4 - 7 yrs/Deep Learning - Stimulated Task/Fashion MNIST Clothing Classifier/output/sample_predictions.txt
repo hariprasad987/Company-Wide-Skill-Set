@@ -1,0 +1,14 @@
+Fashion-MNIST sample predictions
+================================
+Image 01: actual=Ankle boot   predicted=Ankle boot   confidence= 81.2% [correct]
+Image 02: actual=Pullover     predicted=Pullover     confidence= 90.5% [correct]
+Image 03: actual=Trouser      predicted=Trouser      confidence=100.0% [correct]
+Image 04: actual=Trouser      predicted=Trouser      confidence=100.0% [correct]
+Image 05: actual=Shirt        predicted=Pullover     confidence= 57.7% [incorrect]
+Image 06: actual=Trouser      predicted=Trouser      confidence=100.0% [correct]
+Image 07: actual=Coat         predicted=Shirt        confidence= 72.0% [incorrect]
+Image 08: actual=Shirt        predicted=Shirt        confidence= 47.6% [correct]
+Image 09: actual=Sandal       predicted=Sandal       confidence= 82.3% [correct]
+Image 10: actual=Sneaker      predicted=Sneaker      confidence= 97.8% [correct]
+Image 11: actual=Coat         predicted=Pullover     confidence= 62.1% [incorrect]
+Image 12: actual=Sandal       predicted=Sandal       confidence= 98.1% [correct]
