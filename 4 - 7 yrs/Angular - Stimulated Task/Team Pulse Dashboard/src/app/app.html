@@ -1,0 +1,51 @@
+<main class="dashboard">
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Angular stimulated task</p>
+      <h1>Team Pulse Dashboard</h1>
+      <p class="subtitle">A live view of your team's workload and availability.</p>
+    </div>
+    <span class="live-badge"><span></span> Live</span>
+  </header>
+
+  <section class="metrics" aria-label="Team metrics">
+    <article><span>Team members</span><strong>{{ members().length }}</strong></article>
+    <article><span>Available now</span><strong>{{ availableCount() }}</strong></article>
+    <article><span>Active tasks</span><strong>{{ totalTasks() }}</strong></article>
+    <article><span>Team capacity</span><strong>{{ capacity() }}%</strong></article>
+  </section>
+
+  <section class="panel add-panel">
+    <div><p class="section-label">Grow the team</p><h2>Add a new member</h2></div>
+    <form (ngSubmit)="addMember()">
+      <input [(ngModel)]="newMemberName" name="name" placeholder="Full name" aria-label="Full name" />
+      <input [(ngModel)]="newMemberRole" name="role" placeholder="Role" aria-label="Role" />
+      <button type="submit">Add member</button>
+    </form>
+  </section>
+
+  <section class="panel roster">
+    <div class="toolbar">
+      <div><p class="section-label">People</p><h2>Team roster</h2></div>
+      <div class="filters" aria-label="Filter team members">
+        @for (filter of filters; track filter) {
+          <button type="button" [class.active]="activeFilter() === filter" (click)="setFilter(filter)">{{ filter }}</button>
+        }
+      </div>
+    </div>
+    <div class="member-grid">
+      @for (member of visibleMembers(); track member.id) {
+        <article class="member-card">
+          <div class="avatar">{{ member.name.charAt(0) }}</div>
+          <div class="member-copy"><h3>{{ member.name }}</h3><p>{{ member.role }}</p></div>
+          <span class="task-count">{{ member.tasks }} tasks</span>
+          <button type="button" class="status" [class.focused]="member.availability === 'Focused'" (click)="toggleAvailability(member.id)">
+            {{ member.availability }}
+          </button>
+        </article>
+      } @empty {
+        <p class="empty">No team members match this filter.</p>
+      }
+    </div>
+  </section>
+</main>
